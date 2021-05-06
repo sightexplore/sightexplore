@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sight Explore</title>
+
+    <!--Icon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--AOS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!--Style-->
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+
+<body>
+    <canvas></canvas>
+    <script src="js/canvas.js"></script>
+    <main id="top">
+        <section id="navbar" data-aos="fade-down">
+            <nav class="navbar navbar-expand-lg navbar-light mx-4">
+                <a class="navbar-brand" href="#">Sight Explore</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto text-center">
+                        <li class="nav-item px-2 mx-1 active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item px-2 mx-1">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item px-2 mx-1">
+                            <a class="nav-link" href="#resource">Resources</a>
+                        </li>
+                        <li class="nav-item px-2 mx-1">
+                            <a class="nav-link" href="#explore">Explore</a>
+                        </li>
+                        <li class="nav-item px-2 mx-1">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+
+        <section id="intro ">
+            <div class="wrap intro-wrap d-flex justify-content-around mt-4 text-center flex-row-reverse mb-2">
+                <div class="icon animate" data-aos="fade-right">
+                    <img src="assets/images/work.png" alt="" class="img-fluid">
+                </div>
+                <div class="name px-4 " data-aos="fade-left">
+                    <h2>Hello Learner</h2>
+                    <hr>
+                    <h4>
+                        <i class="fa fa-quote-left"></i>
+                        Never stop learning because <br> life never stops teaching
+                        <i class="fa fa-quote-right"></i>
+                    </h4>
+                    <a href="#explore" class="btn btn-outline-warning">Explore</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="social-icon" class="mt-4 pt-4 ">
+            <div class="social-wrap">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-3" data-aos="zoom-in">
+
+                            <svg class="hide" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#FFAE7D"
+                                    d="M42.1,-34.3C52.3,-20.8,56.7,-3.4,55.9,17.8C55.1,39.1,49.1,64.3,33,74.1C17,84,-9.1,78.6,-31.2,67.1C-53.3,55.6,-71.4,38,-72.3,20.4C-73.3,2.8,-57,-14.9,-42.1,-29.5C-27.2,-44.1,-13.6,-55.7,1.2,-56.6C16,-57.5,31.9,-47.9,42.1,-34.3Z"
+                                    transform="translate(100 100)" />
+                            </svg>
+                            <a target="_blank" href="https://github.com/sightexplore"><i class="fa fa-github fa-4x"></i></a>
+                        </div>
+                        <div class="col-3" data-aos="zoom-in">
+
+                            <svg class="hide" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#A3BAC3"
+                                    d="M62.4,-48.6C76.5,-32.1,80.6,-6.4,72.2,10.8C63.7,28,42.8,36.7,23.6,44C4.4,51.4,-13,57.3,-24.8,51.6C-36.7,45.9,-42.9,28.5,-46.9,10.7C-51,-7.1,-52.8,-25.3,-44.6,-40.5C-36.4,-55.7,-18.2,-67.8,3,-70.1C24.1,-72.5,48.3,-65.1,62.4,-48.6Z"
+                                    transform="translate(100 100)" />
+                            </svg>
+                            <a target="_blank" href="https://www.instagram.com/sight_explore/"><i class="fa fa-instagram fa-4x"></i></a>
+                        </div>
+                        <div class="col-3" data-aos="zoom-in">
+
+                            <svg class="hide" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#FF85C2"
+                                    d="M40.8,-34.9C50.9,-19.9,55.8,-3,53.3,13.7C50.7,30.5,40.7,47.1,26.2,54C11.6,60.9,-7.4,58,-21.5,49.4C-35.6,40.8,-44.6,26.5,-47.5,11.5C-50.3,-3.4,-47,-19.1,-38,-33.9C-29.1,-48.7,-14.5,-62.6,0.4,-62.9C15.4,-63.3,30.7,-50,40.8,-34.9Z"
+                                    transform="translate(100 100)" />
+                            </svg>
+                            <a target="_blank" href="https://www.facebook.com/Sight-Explore-100295645554439"><i class="fa fa-facebook-square fa-4x"></i></a>
+                        </div>
+                        <div class="col-3" data-aos="zoom-in">
+
+                            <svg class="hide" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#65DECC"
+                                    d="M43.8,-32.2C55.6,-20.2,63,-2.1,59.5,13.6C55.9,29.2,41.3,42.4,23.7,52C6,61.6,-14.7,67.6,-30.6,61C-46.4,54.3,-57.3,34.9,-63.6,13C-69.8,-9,-71.3,-33.5,-59.9,-45.4C-48.6,-57.3,-24.3,-56.4,-4.1,-53.1C16,-49.9,32.1,-44.1,43.8,-32.2Z"
+                                    transform="translate(100 100)" />
+                            </svg>
+                            <a target="_blank" href="https://www.youtube.com/channel/UCwhfKyR3dNnlbISWhK0eg5w"><i class="fa fa-youtube-play fa-4x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" data-aos="fade-down">
+            <div class="about-wrap">
+                <div class="wave-up">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#fff5ad" fill-opacity="1"
+                            d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="content mt-0 text-center">
+                    <div class="container">
+                        <h1 class="underline">ABOUT</h1>
+                        <p class="px-4 mx-4 para-text">
+                            We provide some educational and informative content that would not only help you to
+                            excel in your academic studies but also to boost your conceptual understanding in the long
+                            run.</p>
+                        <p class="hide px-4 mx-4 para-text">We all have learned various concepts in our school life and
+                            some which we even pursue for
+                            our higher education.
+                            However if our concept is not clear, then we face most of the difficulties to implement our
+                            educative skills in real life.
+                            With this initiative in our mind, we have started this team to clear some basic doubts among
+                            the students in the field of Science, Technology and Engineering.</p>
+                        </p>
+                        <p class="px-4 mx-4 para-text">
+                            Here at Sight Explore we provide:
+                        </p>
+                        <ul class="ml-4 list-skills">
+                            <li>Video &amp; Posts</li>
+                            <li>Conceptual learning</li>
+                            <li>In-Depth analysis</li>
+                            <li>Visualization</li>
+                            <li>Important Concept</li>
+                            <li>Practical Significance</li>
+                            <li>Quiz</li>
+                            <li>Programming</li>
+                            <li>Essential Skills</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="wave-down">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#fff5ad" fill-opacity="1"
+                            d="M0,160L48,144C96,128,192,96,288,117.3C384,139,480,213,576,224C672,235,768,181,864,170.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section id="resource" data-aos="fade-down">
+            <div class="resource-wrap">
+                <div class="wave-up">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#C4FFB2" fill-opacity="1"
+                            d="M0,64L48,74.7C96,85,192,107,288,122.7C384,139,480,149,576,128C672,107,768,53,864,53.3C960,53,1056,107,1152,133.3C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="content mt-0 text-center">
+                    <div class="container">
+                        <h1 class="underline">RESOURCES</h1>
+                        <p class="px-4 mx-4 para-text text-center">
+                            We provide Coding assessment, Programming Article and Programming projects
+                        </p>
+                        <!--Accordian-->
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                <div class="card-header" id="heading1">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-head" type="button" data-toggle="collapse"
+                                            data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                            Java Programming
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapse1" class="collapse show" aria-labelledby="heading1"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class="container">
+                                            <ul class="ml-4 list-skills">
+                                                <a href="https://github.com/sightexplore/programming-codes/tree/main/Java"
+                                                    target="_blank" class="no-style">
+                                                    <li><i class="fa fa-plus"></i> Collection </li>
+                                                </a>
+                                                <a href="https://github.com/sightexplore/programming-codes/blob/main/Java/Pattern/DigitalNumber.java"
+                                                    target="_blank" class="no-style">
+                                                    <li> Digital Numbers </li>
+                                                </a>
+                                                <a href="https://github.com/sightexplore/programming-codes/blob/main/Java/Project/FLAMES.java"
+                                                    target="_blank" class="no-style">
+                                                    <li> FLAMES </li>
+                                                </a>
+                                                <a href="https://github.com/sightexplore/programming-codes/blob/main/Java/StringManipulation/PasswordName.java"
+                                                    target="_blank" class="no-style">
+                                                    <li> Password Name </li>
+                                                </a>
+                                                <a href="https://github.com/sightexplore/programming-codes/tree/main/Java"
+                                                    target="_blank" class="no-style">
+                                                    <li> Tic-Tac-Toe </li>
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="heading2">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-head collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapse2" aria-expanded="false"
+                                            aria-controls="collapse2">
+                                            Python Programming
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapse2" class="collapse" aria-labelledby="heading2"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class="container">
+                                            <ul class="ml-4 list-skills">
+                                                <a href="https://github.com/sightexplore/programming-codes/tree/main/Python" class="no-style">
+                                                    <li><i class="fa fa-plus"></i> Collection </li>
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="heading3">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-head collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapse3" aria-expanded="false"
+                                            aria-controls="collapse3">
+                                            Web Development
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapse3" class="collapse" aria-labelledby="heading3"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class="container">
+                                            <ul class="ml-4 list-skills">
+                                                <a href="https://github.com/sightexplore/programming-codes/tree/main/WebDevlopment" class="no-style">
+                                                    <li><i class="fa fa-plus"></i> Collection </li>
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="heading4">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-head collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapse4" aria-expanded="false"
+                                            aria-controls="collapse4">
+                                            Database & Management
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapse4" class="collapse" aria-labelledby="heading4"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class="container">
+                                            <ul class="ml-4 list-skills">
+                                                <a href="https://github.com/sightexplore/programming-codes/tree/main/Others" class="no-style">
+                                                    <li><i class="fa fa-plus"></i> Collection </li>
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="heading5">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-head collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapse5" aria-expanded="false"
+                                            aria-controls="collapse5">
+                                            C Programming
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapse5" class="collapse" aria-labelledby="heading5"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class="container">
+                                            <ul class="ml-4 list-skills">
+                                                <a href="https://github.com/sightexplore/programming-codes/tree/main/C" class="no-style">
+                                                    <li><i class="fa fa-plus"></i> Collection </li>
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="heading6">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-head collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapse6" aria-expanded="false"
+                                            aria-controls="collapse6">
+                                            C++ Programming
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapse6" class="collapse" aria-labelledby="heading6"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class="container">
+                                            <ul class="ml-4 list-skills">
+                                                <a href="https://github.com/sightexplore/programming-codes/tree/main/CPP" class="no-style">
+                                                    <li><i class="fa fa-plus"></i> Collection </li>
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="heading7">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-head collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapse7" aria-expanded="false"
+                                            aria-controls="collapse7">
+                                            Essential Skills
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapse7" class="collapse" aria-labelledby="heading7"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class="container">
+                                            <ul class="ml-4 list-skills">
+                                                <a href="https://github.com/sightexplore/programming-codes/tree/main/Others" class="no-style">
+                                                    <li><i class="fa fa-plus"></i> Collection </li>
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wave-down">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#C4FFB2" fill-opacity="1"
+                            d="M0,128L48,112C96,96,192,64,288,96C384,128,480,224,576,250.7C672,277,768,235,864,234.7C960,235,1056,277,1152,256C1248,235,1344,149,1392,106.7L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section id="explore" data-aos="fade-down">
+            <div class="explore-wrap">
+                <div class="wave-up">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#B5B2D3" fill-opacity="1"
+                            d="M0,128L30,128C60,128,120,128,180,138.7C240,149,300,171,360,176C420,181,480,171,540,144C600,117,660,75,720,69.3C780,64,840,96,900,106.7C960,117,1020,107,1080,112C1140,117,1200,139,1260,165.3C1320,192,1380,224,1410,240L1440,256L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="content mt-0 text-center">
+                    <div class="container">
+                        <h1 class="underline">EXPLORE</h1>
+                        <p class="px-4 mx-4 para-text text-center">
+                            Check out some of our post in Instagram, Facebooks and Youtube
+                        </p>
+                        <div class="post-wrap">
+                            <div class="container m-0 p-0">
+                                <div class="row text-center">
+                                    <div class="col-sm-12 col-lg-4">
+                                        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CLzmaTehx8y/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="13" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/CLzmaTehx8y/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/CLzmaTehx8y/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Java | C | Python | Web (@sight_explore)</a></p></div></blockquote>
+                                    </div>
+                                    <div class="col-sm-12 col-lg-4">
+                                        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CNu0N9KgVX_/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="13" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/CNu0N9KgVX_/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/CNu0N9KgVX_/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Java | C | Python | Web (@sight_explore)</a></p></div></blockquote> 
+                                    </div>
+                                    <div class="col-sm-12 col-lg-4">
+                                        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/COcKu60BVp4/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="13" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/COcKu60BVp4/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/COcKu60BVp4/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Java | C | Python | Web (@sight_explore)</a></p></div></blockquote> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vdo-wrap">
+                            <div class="container m-0 p-0">
+                                <div class="row text-center">
+                                    <div class="col-sm-12 col-lg-4 mb-2">
+                                        <iframe style="width:100%; height:100%" src="https://www.youtube.com/embed/gAiQ6owEQr4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="col-sm-12 col-lg-4 mb-2">
+                                        <iframe style="width:100%; height:100%" src="https://www.youtube.com/embed/oqCNm9NM1sw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                    </div>
+                                    <div class="col-sm-12 col-lg-4 mb-2">
+                                        <iframe style="width:100%; height:100%" src="https://www.youtube.com/embed/Vliv-mc9Q3s?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container mt-4 pt-4" id="community">
+                        <h1 class="text-center">OUR COMMUNITY</h1>
+                        <div class="row text-center">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="wrap mb-2 py-3 offer">
+                                    <h2>Instagram</h2>
+                                    <h4 id="ig"><span class="counter">300</span>+</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="wrap mb-2 py-3 offer">
+                                    <h2>Youtube</h2>
+                                    <h4 id="yt"><span class="counter">15</span>+</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="wrap mb-2 py-3 offer">
+                                    <h2>Posts</h2>
+                                    <h4 id="post"><span class="counter">70</span>+</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="wrap mb-2 py-3 offer">
+                                    <h2>Videos</h2>
+                                    <h4 id="vdo"><span class="counter">15</span>+</h4>
+                                </div>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+                <div class="wave-down">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#B5B2D3" fill-opacity="1"
+                            d="M0,192L34.3,197.3C68.6,203,137,213,206,186.7C274.3,160,343,96,411,69.3C480,43,549,53,617,101.3C685.7,149,754,235,823,256C891.4,277,960,235,1029,224C1097.1,213,1166,235,1234,245.3C1302.9,256,1371,256,1406,256L1440,256L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <div class="container text-center" style="position: relative;bottom: 120px;" data-aos="zoom-in-left">
+            <img src="assets/images/study.jpg" alt="" class="img-fluid">
+            <h1>OUR SERVICES <i class="fa fa-angle-double-down"></i> </h1>
+        </div>
+
+        <section id="contact" data-aos="fade-down">
+            <div class="contact-wrap">
+                <div class="wave-up">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fddfed" fill-opacity="1" d="M0,192L48,186.7C96,181,192,171,288,154.7C384,139,480,117,576,128C672,139,768,181,864,208C960,235,1056,245,1152,234.7C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>                
+                </div>
+                    <div class="content mt-0 text-center pb-0">
+                    <div class="container">
+                        <h1 class="underline">GET IN TOUCH</h1>
+                        <p class="px-4 mx-4 para-text">
+                            Apart from educational content we also provide service like Static Website and Dynamic Websites like 
+                            Personals Blogs, Porfolio, Landing Pages, E-Wedding Links and ECommerce. We also provide service like making
+                            Resume, CV and Biodata as per modern standards along with Designing such as Instagram Posts, Youtube Thumbnail,
+                            Softening Images and Photoshop.
+                        </p>
+                        <a href="mailto:sight.explore@gmail.com" class="btn btn-outline-danger"> <i class="fa fa-envelope"></i> Contact Us</a>
+                    </div>
+                    <div class="footer mt-5 mb-0 pb-2">
+                        <p class="text-mutted">Sight Explore Team   |   &copy; All Rights reserved 2021     |   sight.explore@gmail.com </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="button" style="display: block; opacity: 1;">
+            <a href="#top">
+                <i class="fa fa-arrow-up fa-2x"></i>
+            </a>
+        </div>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        
+        <script async src="https://www.instagram.com/embed.js"></script>
+        <script src="js/script.js"></script>
+
+</body>
+
+</html>
