@@ -9,6 +9,7 @@
 - 👀 I’m interested in Programming & Data Structure
 - 🌱 I’m currently learning Full Stack Web Development
 - 💞️ I’m looking to collaborate on Eductional Content on Programming
+- 👔 Work: Freelancing, UI & UX Design, Landing pages and Small Scale Website
 
 > Check out Instagram Tags : 
 [![Generic badge](https://img.shields.io/badge/sightexplore-4AFE95.svg)](https://www.instagram.com/explore/tags/sightexplore/)
